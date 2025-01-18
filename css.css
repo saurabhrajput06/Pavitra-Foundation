@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+.logo{
+    display: flex;
+}
+
+.logo img{
+    color: black;
+    font-size: 34px;
+    
+    height: 45px;
+    width: 45px;
+}
+.logo p{
+    font-size: 20px;
+    font-weight: bold;
+    margin: 8px 0 0 4px;
+}
+
+
+.banner {
+     width: 100%;
+    height: 200px; 
+    background-image: url('https://img.freepik.com/free-photo/group-children-lying-reading-grass-field_1150-3900.jpg?t=st=1727371901~exp=1727375501~hmac=6b629de0d7ae7a56e98a501bb5ae14114bb8a8f2b4fd5a4e212289043186d807&w=740'); /* Replace with your image file path */
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    position: relative;
+    
+}
+
+
+.banner::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(163, 193, 82, 0.5); 
+    
+}
+
+
+.banner-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 3rem; 
+    font-weight: bold;
+    text-align: center;
+}
+
+.head{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-left:50px ;
+    padding-left: 20px;
+}
+
+.location{
+    font-size: 15px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 50px;
+}
+.locations{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding-left:10px ;
+}
+
+
+.phone{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding-left:10px ;
+
+
+}
+.mail{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding-left:10px ;
+}
+#map{
+    margin-top:50px;
+}
+
+
+
+.contact-container {
+    margin:50px;
+    width: 50%;
+    height: 550px;
+    margin-top: 80px;
+    padding: 50px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-left: 30px;
+    margin-right: 50px;
+    border: 3px solid rgb(123, 228, 123) ;
+}
+label {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #333;
+}
+
+input[type="text"], input[type="email"], textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}

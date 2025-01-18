@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate Money</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+        }
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .qr-code {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .qr-code img {
+            width: 200px;
+            height: 200px;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            margin-bottom: 5px;
+            color: #555;
+        }
+        input, textarea, button {
+            margin-bottom: 15px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+    </style>
+     <link rel="stylesheet" href="pavita.css">
+</head>
+<body>
+    <nav class="navbar" role="navigation" aria-label="Main Navigation">
+        <div class="logo">Pavitra</div>
+        <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation">
+        <label for="nav-toggle" class="nav-toggle-label">
+            <span></span>
+        </label>
+        <ul class="nav-links">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contect.html">Contect Us</a></li>
+            <li class="dropdown">
+                <a href="#services" class="dropbtn" aria-haspopup="true" aria-expanded="false">What We Serve <i class="fa fa-caret-down"></i></a>
+                <ul class="dropdown-content" aria-label="submenu">
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#health">Health Support</a></li>
+                    <li><a href="#environment">Environment Care</a></li>
+                    <li><a href="#women">Women Empowerment</a></li>
+                </ul>
+            </li>
+            <li><a href="donate.html" class="donate-button">Donate</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h1>Donate Money</h1>
+        <div class="qr-code">
+            <p>Scan the QR code below to donate:</p>
+            <img src="https://via.placeholder.com/200" alt="QR Code">
+        </div>
+        <form action="#" method="POST">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <label for="amount">Donation Amount</label>
+            <input type="number" id="amount" name="amount" placeholder="Enter amount" required>
+
+            <label for="message">Message (Optional)</label>
+            <textarea id="message" name="message" rows="4" placeholder="Enter a message"></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>

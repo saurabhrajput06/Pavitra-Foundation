@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter</title>
+    <link rel="stylesheet" href="About style.css">
+    <link rel="stylesheet" href="css.css">
+    <link rel="stylesheet" href="pavita.css">
+</head>
+<body>
+    <nav class="navbar" role="navigation" aria-label="Main Navigation">
+        <div class="logo">
+            <img src="logo.png" alt="pavitra">
+            <p>Pavitra</p>
+        </div>
+        <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation">
+        <label for="nav-toggle" class="nav-toggle-label">
+            <span></span>
+        </label>
+        <ul class="nav-links">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contect.html">Contect Us</a></li>
+            <li class="dropdown">
+                <a href="#services" class="dropbtn" aria-haspopup="true" aria-expanded="false">What We Serve <i class="fa fa-caret-down"></i></a>
+                <ul class="dropdown-content" aria-label="submenu">
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#health">Health Support</a></li>
+                    <li><a href="#environment">Environment Care</a></li>
+                    <li><a href="#women">Women Empowerment</a></li>
+                </ul>
+            </li>
+            <li><a href="donate.html" class="donate-button">Donate</a></li>
+        </ul>
+    </nav>
+    <div class="banner">
+        <div class="banner-text">About US</div>
+    </div>
+
+    <section class="about" id="about">
+        <div class="picture1">
+            <img src="photo1.jpg" alt="">
+        </div>
+        <div class="about-content">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, aliquid! Quisquam quasi iste nemo atque ut, perspiciatis accusantium ipsa cupiditate soluta, laboriosam natus consequuntur voluptatum ex, consectetur rerum facere veritatis!</p>
+        
+        </div>
+    </section>
+    
+    <div class="containergroup" style="margin: 50px; border-radius: 10px; width: 100;" >
+        <div class="count" >
+            <h3 id="number">0</h3>
+            <p>loction</p>
+        </div>
+        <div class="count">
+            <h3 id="number1">0</h3>
+            <p>healthcomps</p>
+        </div>
+        <div class="count">
+            <h3 id="number2">0</h3>
+            <p>volunteers</p>
+        </div>
+        <div class="count">
+            <h3 id="number3">0+</h3>
+            <p>Year of service</p>
+        </div>
+        <div class="count">
+            <h3 id="number4">0 k</h3>
+            <p>live impacted</p>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <!-- NGO Name and Logo with Social Media IDs -->
+            <div class="footer-section logo-section">
+                <img src="logo.png" alt="NGO Logo" class="logo"> <!-- Replace with your logo path -->
+                <h2>Pavitra</h2>
+                <div class="social-media">
+                    <a href="https://facebook.com" target="_blank">Facebook</a>
+                    <a href="https://twitter.com" target="_blank">Twitter</a>
+                    <a href="https://instagram.com" target="_blank">Instagram</a>
+                </div>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="footer-section quick-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="contect.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Operations -->
+            <div class="footer-section operations">
+                <h3>Operations</h3>
+                <ul>
+                    <li><a></a>Operation 1</li>
+                    <li>Operation 2</li>
+                    <li>Operation 3</li>
+                    <li>Operation 4</li>
+                </ul>
+            </div>
+
+            <!-- Contact Details -->
+            <div class="footer-section contact-details">
+                <h3>Contact Details</h3>
+                <p>Phone: +123456789</p>
+                <p>Email: info@ngo.org</p>
+                <p>Address: 123 NGO Street, City, Country</p>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

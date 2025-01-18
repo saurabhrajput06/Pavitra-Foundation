@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+.number1{
+    display: flex;
+    width: 100%; 
+    align-items: center;
+    gap: 7rem;
+    padding: 10px 10% 0;
+    
+}
+.hello{
+    background: green;
+}

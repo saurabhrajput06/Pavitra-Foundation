@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+.logo img{
+    color: black;
+    font-size: 34px;
+    
+    height: 45px;
+    width: 45px;
+}
+.logo p{
+    font-size: 20px;
+    font-weight: bold;
+    margin: 8px 0 0 4px;
+}
+
+.about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12% 8%;
+    gap: 8rem;
+    background:white;
+}
+.picture1 img{
+    position: relative;
+    width: 350px;
+    border-radius: 10%;
+    /* box-shadow:  0 0px 5px green, 5px 5px 5px green; */
+}
+
+.about-content p{
+    color: black;
+    font-size: 20px;
+    margin: 2rem 0 3rem;
+}
+

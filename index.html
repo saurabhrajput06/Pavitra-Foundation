@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pavitra NGO</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="pavita.css">
+</head>
+
+<body>
+    <nav class="navbar" role="navigation" aria-label="Main Navigation">
+        
+        <div class="logo">
+            <img src="logo.png" alt="pavitra">
+            <p>Pavitra</p>
+        </div>
+        <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation">
+        <label for="nav-toggle" class="nav-toggle-label">
+            <span></span>
+        </label>
+        <ul class="nav-links">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contect.html">Contect Us</a></li>
+            <li class="dropdown">
+                <a href="#services" class="dropbtn" aria-haspopup="true" aria-expanded="false">What We Serve <i class="fa fa-caret-down"></i></a>
+                <ul class="dropdown-content" aria-label="submenu">
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#health">Health Support</a></li>
+                    <li><a href="#environment">Environment Care</a></li>
+                    <li><a href="#women">Women Empowerment</a></li>
+                </ul>
+            </li>
+            <li><a href="donate.html" class="donate-button">Donate</a></li>
+        </ul>
+    </nav>
+    <header class="carousel-container">
+        <div class="carousel-slide">
+            <!-- Card 1 -->
+            <div class="carousel-card" style="background-image: url('pavita.jpg');">
+                <div class="card-content">
+                    <h2>PAVITRA</h2>
+                    <p>
+                        Empowering Communities, Educating Minds, Healing the Planet.</p>
+                </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="carousel-card" style="background-image: url('helth.jpg');">
+                <div class="card-content">
+                    <h2>Health Support</h2>
+                    <p>Providing medical aid to those in need.</p>
+                </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="carousel-card" style="background-image: url('envir.jpg');">
+                <div class="card-content">
+                    <h2>Environment Care</h2>
+                    <p>Conserving the environment for future generations.</p>
+                </div>
+            </div>
+        </div>
+        <!-- Navigation Dots -->
+        <div class="carousel-dots">
+            <span class="dot" onclick="showSlide(0)"></span>
+            <span class="dot" onclick="showSlide(1)"></span>
+            <span class="dot" onclick="showSlide(2)"></span>
+        </div>
+    </header>
+    <section class="ngo-details">
+        <h3>WELCOME TO <strong> PAVITRA</strong> </h3>
+        <div class="linegroup">
+            <div class="line1"></div>
+            <div class="line2"></div>
+        </div>
+        <p>
+            At <strong>[NGO Name]</strong>, we are committed to creating a positive and lasting impact in the
+            communities we serve. Established in <strong>[Year of Establishment]</strong>, our foundation focuses on
+            <em>[briefly describe the mission – for example, providing education, healthcare, environmental
+                conservation, etc.]</em>. We believe in empowering individuals and communities through sustainable
+            development initiatives that address both immediate needs and long-term growth.
+        </p>
+    </section>
+
+    <h3>WE <strong> WORK</strong> </h3>
+    <div class="linegroup">
+        <div class="line1"></div>
+        <div class="line2"></div>
+    </div>
+    <div class="cardgroup">
+        <div class="card">
+            <img src="image1.jpeg" alt="">
+            <p>Eduction</p>
+        </div>
+        <div class="card">
+            <img src="images2.jpeg" alt="">
+            <p>Envirnoment </p>
+        </div>
+        <div class="card">
+            <img src="image3.jpeg" alt="">
+            <p>women empowering</p>
+
+        </div>
+        <div class="card">
+            <img src="image4.png" alt="">
+            <p>healthcare</p>
+
+        </div>
+    </div>
+
+
+    </section>
+    <section class="founder-section">
+        <div class="founder-container">
+            <img class="founder-image" src="founder image.jpg" alt="Founder Image">
+            <div class="founder-details">
+                <h2>Law Dixit</h2>
+                <p>John Doe is the founder and CEO of XYZ Corp. With over 20 years of experience in the technology
+                    industry, John has been instrumental in shaping the vision and growth of the company.</p>
+                <a href="details.html" class="details-button">Learn More</a>
+            </div>
+        </div>
+    </section>
+    <div class="containergroup">
+        <div class="count">
+            <h3 id="number">0</h3>
+            <p>loction</p>
+        </div>
+        <div class="count">
+            <h3 id="number1">0</h3>
+            <p>healthcomps</p>
+        </div>
+        <div class="count">
+            <h3 id="number2">0</h3>
+            <p>volunteers</p>
+        </div>
+        <div class="count">
+            <h3 id="number3">0</h3>
+            <p>Year of service</p>
+        </div>
+        <div class="count">
+            <h3 id="number4">0 k</h3>
+            <p>live impacted</p>
+        </div>
+    </div>
+    <!-- dnation section  -->
+    <section class="doo">
+        <h3>Donate</h3>
+        <div class="linegroup">
+          <div class="line1"></div>
+          <div class="line2"></div>
+        </div>
+        <div class="donation cardgroup">
+          <div class="donate card" onclick="showPopup('Financial Assistance - Donate Funds')">
+            <p>Financial Assistance</p>
+            <p>Donate Funds</p>
+          </div>
+          <div class="donate card" onclick="showPopup('Khushiyon ke do pal')">
+            <img src="donate2.png" alt="Khushiyon Ka Post Box">
+            <p>Khushiyon Ka Post Box</p>
+          </div>
+        </div>
+      </section>
+      
+      <!-- Popup Window -->
+      <div class="popup" id="popup">
+        <div class="popup-content">
+          <span class="close-btn" onclick="closePopup()">&times;</span>
+          <p id="popup-message"></p>
+        </div>
+      </div>
+    <!-- media coverages  -->
+    <section>
+        <div class="media-coverage">
+            <h3>Media <strong>Coverage</strong></h3>
+            <div class="linegroup">
+                <div class="line1"></div>
+                <div class="line2"></div>
+            </div>
+            <div class="grid">
+              <!-- Repeat this block for each image -->
+              <div class="grid-item" onclick="showImageInfo('Project A - Featured on Tech Daily')">
+                <img src="pavitra woman.jpg" alt="Media 1">
+                <div class="overlay">Project A</div>
+              </div>
+              <div class="grid-item" onclick="showImageInfo('Project B - Interview with XYZ News')">
+                <img src="medi1.jpg" alt="Media 2">
+                <div class="overlay">Project B</div>
+              </div>
+              <div class="grid-item" onclick="showImageInfo('Project C - Spotlight on Innovations')">
+                <img src="medi2.jpg" alt="Media 3">
+                <div class="overlay">Project C</div>
+              </div>
+              <div class="grid-item" onclick="showImageInfo('Project C - Spotlight on Innovations')">
+                <img src="medi3.jpg" alt="Media 3">
+                <div class="overlay">Project C</div>
+              </div>
+              <div class="grid-item" onclick="showImageInfo('Project C - Spotlight on Innovations')">
+                <img src="medi4.jpg" alt="Media 3">
+                <div class="overlay">Project C</div>
+              </div>
+              <div class="grid-item" onclick="showImageInfo('Project C - Spotlight on Innovations')">
+                <img src="medi5.jpg" alt="Media 3">
+                <div class="overlay">Project C</div>
+              </div>
+              <div class="grid-item" onclick="showImageInfo('Project C - Spotlight on Innovations')">
+                <img src="medi6.jpg" alt="Media 3">
+                <div class="overlay">Project C</div>
+              </div>
+              <div class="grid-item" onclick="showImageInfo('Project C - Spotlight on Innovations')">
+                <img src="medi7.jpg" alt="Media 3">
+                <div class="overlay">Project C</div>
+              </div>
+              <div class="grid-item" onclick="showImageInfo('Project C - Spotlight on Innovations')">
+                <img src="medi8.jpg" alt="Media 3">
+                <div class="overlay">Project C</div>
+              </div>
+              <!-- Add more grid items as needed -->
+            </div>
+          </div>
+          <script>
+            function showImageInfo(info) {
+              alert(info);
+            }
+          </script>
+        
+
+    </section>
+    <!-- donation section end -->
+
+    <footer>
+        <div class="footer-container">
+            <!-- NGO Name and Logo with Social Media IDs -->
+            <div class="footer-section logo-section">
+                <img src="logo.png" alt="NGO Logo" class="logo"> <!-- Replace with your logo path -->
+                <h2>Pavitra</h2>
+                <div class="social-media">
+                    <a href="https://facebook.com" target="_blank">Facebook</a>
+                    <a href="https://twitter.com" target="_blank">Twitter</a>
+                    <a href="https://instagram.com" target="_blank">Instagram</a>
+                </div>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="footer-section quick-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="contect.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Operations -->
+            <div class="footer-section operations">
+                <h3>Operations</h3>
+                <ul>
+                    <li><a></a>Operation 1</li>
+                    <li>Operation 2</li>
+                    <li>Operation 3</li>
+                    <li>Operation 4</li>
+                </ul>
+            </div>
+
+            <!-- Contact Details -->
+            <div class="footer-section contact-details">
+                <h3>Contact Details</h3>
+                <p>Phone: +123456789</p>
+                <p>Email: info@ngo.org</p>
+                <p>Address: 123 NGO Street, City, Country</p>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
